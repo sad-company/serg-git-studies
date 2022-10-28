@@ -1,9 +1,3 @@
-def same_digits(num):
-    if max(num) == min(num):
-        print("YES")
-    else:
-        print('NO')
+num = input()
+print('Yes' if sorted(num, reverse=True) == list(num) else 'No')
 
-
-num = str(input())
-same_digits(num)
