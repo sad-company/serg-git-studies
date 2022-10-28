@@ -1,9 +1,8 @@
 def same_digits(num):
-    for i in range(len(num)):
-        if num[0] != num[i]:
-            print('NO')
-            return
-    print('YES')
+    if max(num) == min(num):
+        print("YES")
+    else:
+        print('NO')
 
 
 num = str(input())
