@@ -1,3 +1,9 @@
-num = input()
-print('Yes' if sorted(num, reverse=True) == list(num) else 'No')
+def get_divider(numb):
+    divider = 2
+    while numb % divider != 0:
+        divider += 1
+    print(divider)
 
+
+numb = int(input())
+get_divider(numb)
